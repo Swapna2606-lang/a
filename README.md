@@ -45,7 +45,24 @@ classroom-intelligence/
 - Maven 3.8+
 - Node.js 18+
 
+> If Java 17 is installed but not the default system runtime, set `JAVA_HOME` and update `PATH`:
+>
+> ```bash
+> export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+> export PATH="$JAVA_HOME/bin:$PATH"
+> ```
+>
+> If Maven is installed but the version is below 3.8, upgrade to Maven 3.8+.
+>
 ### 1. Start Backend
+
+From the repo root:
+
+```bash
+bash start.sh
+```
+
+Or run backend manually:
 
 ```bash
 cd backend
